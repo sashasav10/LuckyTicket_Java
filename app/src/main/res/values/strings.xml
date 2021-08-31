@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LuckyTicket_Java</string>
+    <string name="errorMessage">Please enter 6 digits number</string>
+    <string name="hint_editText">Enter a ticket number</string>
+    <string name="checkButton_text">Check a ticket</string>
+    <string name="TicketImageDescription">Ticket</string>
+    <string name="LampImageDescription">Lamp</string>
+
+</resources>
