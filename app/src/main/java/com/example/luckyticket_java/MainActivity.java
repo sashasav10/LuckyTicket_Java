@@ -15,6 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView lampImage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,27 +24,24 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("ResourceAsColor")
     @RequiresApi(api = Build.VERSION_CODES.N)
-    public void CheckIsLucky(View view){
-        lampImage=(ImageView) findViewById(R.id.lamp_image);
-        EditText inputNumber= findViewById(R.id.ticket_number_editText);
-        String sInputNumber=inputNumber.getText().toString().trim();
-        if(sInputNumber.length()<6){
+    public void CheckIsLucky(View view) {
+        lampImage = (ImageView) findViewById(R.id.imgLamp);
+        EditText inputNumber = findViewById(R.id.etTicketNumber);
+        String sInputNumber = inputNumber.getText().toString().trim();
+        if (sInputNumber.length() < getResources().getInteger(R.integer.MAX_NUMBER_OF_DIGITS)) {
             inputNumber.setError(getString(R.string.errorMessage));
-        }
-        else{
-            int leftPart=sInputNumber.substring(0,3).chars().sum();
-            int rightPart=sInputNumber.substring(3,6).chars().sum();
+        } else {
+            int leftPart = sInputNumber.substring(0, 3).chars().sum();
+            int rightPart = sInputNumber.substring(3, 6).chars().sum();
             Handler handler = new Handler();
             handler.postDelayed(() -> lampImage.setImageResource(R.drawable.gray_lamp_image), 5000);
-            if(leftPart==rightPart){
+            if (leftPart == rightPart) {
                 lampImage.setImageResource(R.drawable.green_lamp_image);
-                Toast.makeText(this,"That's a lucky ticket!",Toast.LENGTH_LONG).show();
-            }
-            else {
+                Toast.makeText(this, getString(R.string.toastMessageLucky), Toast.LENGTH_LONG).show();
+            } else {
                 lampImage.setImageResource(R.drawable.red_lamp_image);
-                Toast.makeText(this,"That's not a lucky ticket(", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getString(R.string.toastMessageNotLucky), Toast.LENGTH_LONG).show();
             }
-
         }
     }
 }

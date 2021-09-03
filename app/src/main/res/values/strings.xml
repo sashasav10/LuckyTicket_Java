@@ -5,5 +5,7 @@
     <string name="checkButton_text">Check a ticket</string>
     <string name="TicketImageDescription">Ticket</string>
     <string name="LampImageDescription">Lamp</string>
-
+    <string name="toastMessageLucky">Congratulations! Your ticket is lucky</string>
+    <string name="toastMessageNotLucky">Unfortunately, this ticket is not lucky</string>
+    <integer name="MAX_NUMBER_OF_DIGITS">6</integer>
 </resources>

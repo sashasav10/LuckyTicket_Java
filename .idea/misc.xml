@@ -6,14 +6,14 @@
         <entry key="app/src/main/res/drawable-anydpi/ticket_Image.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/drawable/gray_button_image.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/drawable/gray_lamp_image.xml" value="0.1296875" />
+        <entry key="app/src/main/res/drawable/green_lamp_image.xml" value="0.10833333333333334" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/drawable/red_button_image.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/drawable/red_lamp_image.xml" value="0.10833333333333334" />
+        <entry key="app/src/main/res/drawable/ticket_image.xml" value="0.10833333333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ticket_Image.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
